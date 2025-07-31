@@ -1,6 +1,6 @@
 [project]
 name = "python-learning-lab"
-version = "0.0.0"
+version = "1.0.1"
 description = "Personal documentation of my Python journey and experiments"
 readme = "README.md"
 requires-python = ">=3.10,<3.14"
