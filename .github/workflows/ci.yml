@@ -22,7 +22,7 @@ jobs:
       run: uv sync --frozen --all-extras
     - name: Run tests
       run: uv run pytest
-    - name: Lint code
-      run: uv run ruff .
-    - name: Format code
-      run: uv run black --check --diff .
+    - name: Check code linting
+      run: uv run ruff check .
+    - name: Check code formatting
+      run: uv run ruff format --check .
