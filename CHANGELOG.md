@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.1.1 (2025-08-04)
+
+### Bug Fixes
+
+- Correct missing quotation mark in Git user configuration
+  ([`1dc9c2f`](https://github.com/Dzoel31/python-learning-lab/commit/1dc9c2f879e385694782a1eaa1efa2e4b4b9bc8b))
+
+
 ## v1.1.0 (2025-08-04)
 
 ### Bug Fixes
