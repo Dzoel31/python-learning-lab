@@ -2,7 +2,13 @@
 
 import pytest
 
-from learning.simple_calculator import add, subtract, multiply, divide, calculator
+from learning.project.simple_calculator import (
+    add,
+    subtract,
+    multiply,
+    divide,
+    calculator,
+)
 
 
 @pytest.mark.parametrize(
