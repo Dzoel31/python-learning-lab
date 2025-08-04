@@ -58,6 +58,7 @@ it will output:
 ```
 """
 
+
 def basic_variable_types():
     # Integer
     age = 30
