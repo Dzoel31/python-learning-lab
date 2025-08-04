@@ -1,4 +1,5 @@
 site_name: My Python Documentation
+site_url: https://dzoel31.github.io/python-learning-lab/
 
 theme:
   name: material
