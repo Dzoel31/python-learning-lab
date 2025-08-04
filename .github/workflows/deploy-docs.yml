@@ -1,0 +1,31 @@
+name: "Learn Deploy Docs to GitHub Pages"
+
+on:
+  push:
+    branches:
+    - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy-docs:
+    name: "Deploy Documentation"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install uv and set up Python
+        uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.13'
+      - name: Install dependencies
+        run: uv sync --frozen --all-extras
+      - name: Configure Git User
+        run: |
+          git config --global user.name "github-actions[bot]
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Deploy to GitHub Pages
+        run: uv run mkdocs gh-deploy --force --clean
